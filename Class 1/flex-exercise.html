@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .vertical-flex{
+            display:flex;
+            flex-direction:column;
+        }
+        .horizontal-flex{
+            display:flex;
+            flex-direction:row;
+        }
+        .flex-container{
+            height:100vh;
+        }
+        .flex-top{
+            justify-content:space-around;
+            align-items:center;
+            height:40%;
+            background-color:lightgray;
+        }
+
+        .flex-top img{
+            height:150px;
+            width:150px;
+            object-fit:cover;
+        }
+        .flex-bottom{
+            height:60%;
+        }
+        .flex-bottom > div{
+            width:50%;
+        }
+        .flex-left{
+            background:lightpink;
+        }
+        .flex-right img{
+            height:50%;
+            object-fit:cover;
+        }
+        .flex-right > div{
+            background:cyan;
+            height:100%;
+        }
+        .flex-left{
+            padding-left:20px;
+        }
+    </style>
+</head>
+<body>
+    <main class="flex-container vertical-flex">
+        <div class="flex-top horizontal-flex">
+            <img src="img/blog1.jpg" alt="imagen">
+            <h1>This is an H1</h1>
+        </div>
+        <div class="flex-bottom horizontal-flex">
+            <div class="flex-left">
+                <h3>This is a list</h3>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+            <div class="flex-right vertical-flex">
+                <img src="img/blog2.jpg" alt="imagen">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam molestiae, quae distinctio sequi alias fugit soluta nulla impedit dolor beatae. Assumenda iure ex temporibus possimus provident itaque fugit deleniti! Molestiae!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
