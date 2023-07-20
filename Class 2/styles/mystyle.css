@@ -1,0 +1,130 @@
+/* GLOBALS */
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family:'arial';
+}
+a{
+    text-decoration:none;
+}
+/* UTILITIES */
+.container{
+    width:70%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header-container{
+    background-image:url(../img/header.jpg);
+    height:45vh;
+    background-position:center center;
+    background-size:cover;
+}
+.header-flex{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    height:100%;
+}
+.header-bar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+.header-bar a{
+    color:white;
+    margin:10px;
+}
+.header-text{
+    color:white;
+}
+
+/* about us container */
+
+.about-us-container{
+    display:flex;
+}
+h2,h3{
+    text-align:center;
+    margin:20px  auto;
+}
+.about-item{
+    padding:10px;
+    margin-right:10px;
+}
+.about-item p{
+    text-align:justify;
+    line-height:1.5;
+    margin:10px;
+}
+.about-item img{
+    display:block;
+    margin:10px auto;
+    object-fit:cover;
+    
+}
+
+.an-item{
+    background-color:whitesmoke;
+    border:1px solid lightgray;
+    font-weight:bold;
+}
+.an-item-text{
+    padding:20px;
+    text-align:justify;
+}
+ul li{
+    list-style-type:none;
+}
+.price{
+    color:green;
+    font-weight:bold;
+    margin:20px 0;
+}
+.icons{
+    display:flex;
+    align-items:center;
+    margin:10px auto;
+}
+.icons img{
+    width:30px;
+    margin-right:20px;
+}
+.btn-details{
+    display:block;
+    background-color:darkorange;
+    color:white;
+    padding:5px;
+    width:100%;
+    text-align:center;
+}
+
+/* Houses and penthouses flexbox */
+.houses-flex-container{
+    display:flex;
+    flex-direction:row;
+    max-width:100%;
+    justify-content:space-;
+}
+.btn-details{
+    font-weight:lighter;
+}
+.an-item-text h3{
+    font-weight:bolder;
+}
+.an-item{
+    margin:20px;
+}
+.an-item-img > img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:cover;
+}
+.flex-icons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
