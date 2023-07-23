@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        .phases-title{
+            font-family:'Lato';
+            text-align:center;
+            font-size:30px;
+            padding:0 20px;
+        }
+        .phases-container{
+            height:140px;
+            display:flex;
+            flex-direction:row;
+            width:80%;
+            margin:auto;
+        }
+
+        .arrow-container{
+            background:white;
+            display:flex;
+            flex-direction:row;
+            width:100%;
+            transition:0.4s ease;
+        }
+        .arrow-container:not(:nth-child(2)){
+            flex:1;
+        }
+        .arrow-container:nth-child(2){
+            flex:1.5;
+        }
+
+        .arrow-container:hover{
+            /* width:190%; */
+            flex:2;
+            transition:0.4s ease;
+
+        }
+        .arrow-container:hover .contenido{
+            background:#bbb;
+            transition:0.4s ease;
+        }
+        .arrow-container:hover .text-content{
+            color:black;
+        }
+        .arrow-container:hover .saliente{
+            border-left: 30px solid #bbb;
+            transition:0.4s ease;
+        }
+        .phases-container:hover .arrow-container:not(:hover){
+            flex:1;
+            transition:0.4s ease;
+        }
+        .contenido{
+            padding:0 7px;
+            width:95%;
+            background:#777;
+            border-top: 70px solid transparent;
+            border-bottom: 70px solid transparent;
+            border-left: 30px solid white;
+            transition:0.4s ease;
+        }
+        .saliente{
+            border-top: 70px solid transparent;
+            border-bottom: 70px solid transparent;
+            border-left: 30px solid #777;
+            transition:0.4s ease;
+        }
+        .text-content{
+            display:flex;
+            flex-direction:row;
+            gap:20px;
+            justify-content:center;
+            max-width: 50%;
+            margin:auto;
+            gap:8px;
+            max-width:70%;
+            margin: auto;
+            height: 100%;
+            vertical-align: middle;
+            align-items: center;
+            text-align:left;
+            font-family:'Lato';
+            color:white;
+            text-align:center;
+        }
+        /* tablet or smaller */
+        @media (max-width:768px) {
+            .arrow-container:nth-child(2){
+                flex:1;
+            }
+            .phases-container:hover .arrow-container:not(:hover) {
+                visibility: hidden;
+                width:0;
+            }
+            .arrow-container{
+                overflow:hidden;
+            }
+            .text-content p:last-child{
+                visibility: hidden;
+                width:0;
+            }
+            .arrow-container:hover{
+                flex-basis:100%;
+            }
+            .arrow-container:hover .text-content p:last-child{
+                visibility: visible;
+                width:auto;
+            }
+            .arrow-container:hover .contenido{
+                background:#bbb;
+                transition:0.4s ease;
+            }
+            .arrow-container:hover .saliente{
+                border-left: 30px solid #bbb;
+                transition:0.4s ease;
+            }
+
+        }
+    </style>
+    <h4 class="phases-title">Fases del proyecto de Observatorio Mediático sobre Migración y Salud.
+    </h4>
+    <div class="phases-container">
+        <div class="arrow-container">
+            <div class="contenido">
+                <div class="text-content">
+                    <p>1)</p>
+                    <p>Analisis de contenido de noticias</p>
+                </div>
+            </div>
+            <div class="saliente"></div>
+        </div>
+        <div class="arrow-container">
+            <div class="contenido">
+                <div class="text-content">
+                    <p>2)</p>
+                    <p>Observacion digital no participante de los mensajes en redes sociodigitales</p>
+                </div>
+            </div>
+            <div class="saliente"></div>
+        </div>
+        <div class="arrow-container">
+            <div class="contenido">
+                <div class="text-content">
+                    <p>3)</p>
+                    <p>Observatorio, analisis de resultados y difusion</p>
+                </div>
+            </div>
+            <div class="saliente"></div>
+        </div>
+    </div>
+</body>
+</html>
