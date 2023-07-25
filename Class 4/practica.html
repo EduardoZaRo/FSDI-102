@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:green;
+        }
+
+        .flex-container{
+            background-color:lightgray;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+        .flex-child{
+            background-color:green;
+            border:1px solid yellowgreen;
+            padding:5px;
+        }
+        @media(min-width:768px){
+            body{
+                background-color:white;
+            }
+            .flex-container{
+                flex-direction:row;
+                justify-content:center;
+                align-items:center;
+            }
+        }
+        table,th,td{
+            font-family:arial;
+            border-collapse:collapse;
+        }
+        th,td{
+            padding:10px;
+        }
+        th{
+            background:#9999FF;
+            border-top:4px solid #9b9be1;
+            border-bottom:4px solid #9b9be1;
+            text-align:left;
+        }
+        td{
+            background:#CCCCFF;
+            border-bottom:1px solid white;
+        }
+        .error{
+            background:red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-child">
+            A
+        </div>
+        <div class="flex-child">
+            B
+        </div>
+        <div class="flex-child">
+            C
+        </div>
+    </div>
+    <h1>Tables in HTML</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Emp ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>E342</td>
+                <td>Bill</td>
+                <td>Evans</td>
+                <td>bill@email.com</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>E343</td>
+                <td>Bill</td>
+                <td>Evans</td>
+                <td>bill@email.com</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>E344</td>
+                <td>Bill</td>
+                <td>Evans</td>
+                <td>bill@email.com</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>E345</td>
+                <td>Bill</td>
+                <td>Evans</td>
+                <td>bill@email.com</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>E346</td>
+                <td>Bill</td>
+                <td>Evans</td>
+                <td>bill@email.com</td>
+                <td>35</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
